@@ -1,0 +1,49 @@
+
+with open ("test.txt","r") as f:
+   f_contents =f.read()
+   print(f_contents,end= '')
+
+
+
+
+
+appendme="\n added this line into file"
+appendfile=open(" test.txt","a")
+appendfile.write (appendme)
+appendfile.close ()
+
+
+
+
+
+
+lst1=[]
+with open ("test.txt","r") as f:
+     f_contests= f.readline ()
+     lst1.append( f_contents)
+     print (lst1)
+
+
+
+
+
+
+lst1=[]
+with open (" test.txt","r") as f:
+        f_contents=f.readline()
+        lst1.append(f_contents)
+        res= max(lst1,key=len)
+print (res)
+
+
+
+
+
+
+
+fname = "test.txt"
+count = 0
+with open (fname,'r') as f:
+    for line in f:
+        count += 1
+print("total number of lines is:", count)
